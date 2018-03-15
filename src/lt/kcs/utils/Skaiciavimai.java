@@ -22,7 +22,6 @@ public class Skaiciavimai {
                 System.out.println(i);
             }
         }
-        //nebaigta
 
     }
 
