@@ -107,10 +107,15 @@ public class MinKon {
 
         for (int i = 1; i<=a;i++){
 
-            fk=fk*i;
+            fk=fk*i; //fk *=i;
         }
         System.out.println(fk);
 
+
+
+    }
+
+    public static void fibonacci(){
 
 
     }
