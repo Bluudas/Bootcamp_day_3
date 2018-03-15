@@ -1,10 +1,16 @@
 package lt.kcs.utils;
 
+import java.util.Scanner;
+
 public class MinKon {
+
+
 
     public static void main(String[] args) {
 
-        atsDvimatMas();
+
+
+        fakto();
 
     }
 
@@ -63,5 +69,49 @@ public class MinKon {
             }
             System.out.println();
         }
+    }
+
+    private static void daugLente(){
+
+
+        //dvimates matricos sukurimas, uzpildymas ir atspausdinimas
+
+        int[][] lentele = new int[10][10];
+
+        for (int i=1;i<lentele.length;i++){
+
+            for (int j =1; j<lentele[i].length;j++){
+
+                lentele[i][j] = i*j;
+            }
+        }
+
+        for (int i=1;i<lentele.length;i++){
+
+            for (int j =1; j<lentele[i].length;j++){
+
+                System.out.print(lentele[i][j]+" ");
+            }
+            System.out.println();
+        }
+
+
+    }
+
+    private  static  void fakto(){
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Iveskite skaiciu");
+        int a = sc.nextInt();
+        int fk =1;
+
+        for (int i = 1; i<=a;i++){
+
+            fk=fk*i;
+        }
+        System.out.println(fk);
+
+
+
     }
 }
